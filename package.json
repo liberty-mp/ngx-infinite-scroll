@@ -4,9 +4,10 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 4202",
     "build": "ng build",
     "build:lib": "ng build ngx-infinite-scroll",
+    "watch:lib": "ng build ngx-infinite-scroll --watch --configuration development",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "publish-lib": "npm publish --tag latest ./dist/ngx-infinite-scroll",

@@ -1,4 +1,5 @@
 import {
+  OnInit,
   AfterViewInit,
   Directive,
   ElementRef,
@@ -9,6 +10,7 @@ import {
   OnDestroy,
   Output,
   SimpleChanges,
+  ChangeDetectorRef
 } from '@angular/core';
 import { Subscription } from 'rxjs';
 
@@ -23,7 +25,7 @@ import {
   selector: '[infiniteScroll], [infinite-scroll], [data-infinite-scroll]',
 })
 export class InfiniteScrollDirective
-  implements OnDestroy, OnChanges, AfterViewInit
+  implements OnInit, OnDestroy, OnChanges, AfterViewInit
 {
   @Output() scrolled = new EventEmitter<IInfiniteScrollEvent>();
   @Output() scrolledUp = new EventEmitter<IInfiniteScrollEvent>();
@@ -41,7 +43,11 @@ export class InfiniteScrollDirective
 
   private disposeScroller: Subscription | any;
 
-  constructor(private element: ElementRef, private zone: NgZone) {}
+  constructor(private element: ElementRef, private zone: NgZone, private cdr: ChangeDetectorRef) {}
+
+  ngOnInit() {
+    this.cdr.detectChanges();
+  }
 
   ngAfterViewInit() {
     if (!this.infiniteScrollDisabled) {
