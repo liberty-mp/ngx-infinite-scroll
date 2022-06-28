@@ -1,9 +1,17 @@
 {
   "name": "@libertymp/ngx-infinite-scroll",
   "version": "0.0.1",
-  "scripts": {
-    "postinstall": "opencollective-postinstall || exit 0"
+  "description": "Angular (14+) Infinite Scroll Directive",
+  "author": "@liberty-mp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liberty-mp/ngx-infinite-scroll"
   },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liberty-mp/ngx-infinite-scroll/issues"
+  },
+  "homepage": "https://github.com/liberty-mp/ngx-infinite-scroll",
   "peerDependencies": {
     "@angular/common": ">=14.0.0 <15.0.0",
     "@angular/core": ">=14.0.0 <15.0.0"
@@ -11,9 +19,7 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/ngx-infinite-scroll",
-    "logo": "https://opencollective.com/ngx-infinite-scroll/logo.txt"
+  "publishConfig": {
+    "access": "public"
   }
 }
