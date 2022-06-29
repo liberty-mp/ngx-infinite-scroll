@@ -7,7 +7,7 @@ export function resolveContainerElement(
   fromRoot: boolean
 ): any {
   const hasWindow = window && !!window.document && window.document.documentElement;
-  let container = hasWindow && scrollWindow ? window : defaultElement;
+  let container = defaultElement;
   if (selector) {
     const containerIsString =
       selector && hasWindow && typeof selector === 'string';
