@@ -1,6 +1,6 @@
 {
   "name": "@libertymp/ngx-infinite-scroll",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Angular (14+) Infinite Scroll Directive",
   "author": "@liberty-mp",
   "repository": {
@@ -13,8 +13,8 @@
   },
   "homepage": "https://github.com/liberty-mp/ngx-infinite-scroll",
   "peerDependencies": {
-    "@angular/common": ">=14.0.0 <15.0.0",
-    "@angular/core": ">=14.0.0 <15.0.0"
+    "@angular/common": ">=15.0.0 <16.0.0",
+    "@angular/core": ">=15.0.0 <16.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
