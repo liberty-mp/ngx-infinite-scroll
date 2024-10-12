@@ -1,6 +1,6 @@
 {
   "name": "@libertymp/ngx-infinite-scroll",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Angular (14+) Infinite Scroll Directive",
   "author": "@liberty-mp",
   "repository": {
